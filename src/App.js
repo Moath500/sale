@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navb from "./componentes/Navb/Navb";
+import Categores from './componentes/Categores/index'
+import Cards from './componentes/Cards/Cards'
+import Ptabel from './componentes/Tabels/Ptabel'
 function App() {
+
+  const name = 'mobile';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Navb/>
+     <Categores name={name}/>
+
+      <Ptabel/>
     </div>
   );
 }

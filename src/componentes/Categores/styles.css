@@ -1,0 +1,167 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+
+.container{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--veryLightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    color : var(--varyDarkBlue);
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top:70px;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.box {
+    border-radius: 7px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+
+p {
+    color: var(--grayishBlue);
+}
+
+img {
+    float: right;
+}
+
+.petrol{
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue) ;
+    margin:30px;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+.red {
+    border-top: 3px solid var(--red);
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+button{
+   
+    /* CSS */
+      align-items: center;
+      background-color: #3c89d6;
+      border: 0;
+      border-radius: 100px;
+      box-sizing: border-box;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 20px;
+      max-width: 480px;
+      min-height: 40px;
+      min-width: 0px;
+      overflow: hidden;
+      padding: 0px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      touch-action: manipulation;
+      transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+    }
+    
+    button:hover,
+    button:focus { 
+      background-color: #164c92;
+      color: #ffffff;
+    }
+    
+    button:active {
+      background: #083f75;
+      color: rgb(255, 255, 255, .7);
+    }
+    
+    button:disabled { 
+      cursor: not-allowed;
+      background: rgba(0, 0, 0, .08);
+      color: rgba(0, 0, 0, .3);
+    }
+
+
+
+
+@media (min-width: 950px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 20%;
+     
+    }
+    .header p {
+        width: 30%;
+    }
+    
+}
